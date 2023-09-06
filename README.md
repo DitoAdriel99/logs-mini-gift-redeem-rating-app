@@ -1,0 +1,1 @@
+# logs-mini-gift-redeem-rating-app
