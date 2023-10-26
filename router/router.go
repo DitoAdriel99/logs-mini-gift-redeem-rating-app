@@ -2,6 +2,7 @@ package router
 
 import (
 	"go-learn/controller/logs_user"
+	"go-learn/middleware"
 	"go-learn/repositories"
 	"go-learn/service"
 	"net/http"
@@ -14,6 +15,9 @@ func New() http.Handler {
 	//set dependency
 	repo := repositories.NewRepo()
 	serv := service.NewService(repo)
+
+	dispatcher := middleware.NewDispatcher(*repo)
+	dispatcher.StartDispatcher()
 
 	// call controllers auth
 	controllerLogs := logs_user.NewControllerLogs(*serv)
