@@ -36,7 +36,7 @@ The project follows a clean architecture pattern, separating concerns into diffe
 #### 2. Run the application
 ```bash
 # run command :
-git clone https://github.com/DitoAdriel99/logs-mini-gift-redeem-rating-app
+git clone https://github.com/DitoAdriel99/logs-mini-gift-redeem-rating-app.git
 
 # install dependency
 go mod tidy
