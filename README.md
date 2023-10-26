@@ -10,6 +10,7 @@ In the Logs Mini Gift App, our Logging Service plays a vital role in ensuring th
 - Go (version 1.19)
 - Gorilla Mux
 - PostgreSQL
+- Pubsub
 
 ### Architecture/Modularity
 
